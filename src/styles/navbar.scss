@@ -1,0 +1,45 @@
+.navbar-container{
+    background: url(../assets/images/background.png);
+    height: 100vh;
+    margin-top: 120px;
+}
+.navbar {
+    // background: #0a0c22;
+    z-index: 1;
+    top: 0;
+    &.navbar-home {
+      background-image: none;
+      background-color: #000;
+    }
+    .navbar-nav{
+      border: 1px solid rgb(14 37 37 / 98%);
+    }
+    .navbar-brand {
+      font-size: 32px;
+    }
+    .nav-link {
+      color: $white;
+      font-weight: bold;
+      &:hover{
+        color: $primary
+      }
+      &.router-link-active {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: -1rem;
+          right: -1rem;
+          top: 0;
+          bottom: 0;
+          background-color: #4a4a4a;
+          background-color: rgba(255, 255, 255, 0.15);
+          transform: skew(-40deg);
+        }
+      }
+    }
+
+    .navbar-options{
+        background: rgb(14 15 36 / 76%);
+    }
+  }

@@ -1,0 +1,18 @@
+$white: rgba(189, 189, 189, 1 );
+$primary: #231f75a1;
+$dark: #212529;
+$light-grey: #ecefef;
+$grey-200: #F1F2F3;
+
+// fonts
+$open-sans: 'Open Sans', sans-serif;
+$font-family-sans-serif: 'Inter', sans-serif;
+
+// screen breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+)

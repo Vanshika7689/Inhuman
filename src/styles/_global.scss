@@ -1,0 +1,30 @@
+@import "./variables";
+@import "./navbar.scss";
+@import "./home.scss";
+
+$theme-colors: (
+    "primary": $primary,
+    "dark": $dark,
+    "white": $white,
+);
+
+$color-success: map-get($theme-colors, "success");
+$angle: 8px;
+$angle-o: 4px;
+
+@mixin shadow-3d($color) {
+    box-shadow: 0 0 0 $color, -1px 1px 0 $color, -2px 2px 0 $color,
+        -3px 3px 0 $color, -4px 4px 0 $color, -5px 5px 0 $color, -6px 6px 0 $color,
+        -7px 7px 0 $color, -8px 8px 0 $color;
+}
+
+// Bootstrap and its default variables
+@import "bootstrap/scss/bootstrap.scss";
+
+#root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* text-align: center; */
+    color: #2c3e50;
+    background-color: #17121d;
+}
